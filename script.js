@@ -1,4 +1,4 @@
-const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=AIzaSyDGqCH0lB5qZjs8tSxveNzU0fhE570N3jM";
+const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=YOUR API KEY";
         const CLUB_MEMORY = `
 Your bots memory here `;
 
