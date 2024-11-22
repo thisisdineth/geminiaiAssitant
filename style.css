@@ -1,0 +1,234 @@
+ /* Reset & Basic Styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: vh;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    height: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+    width: 100%;
+    margin: 20px auto;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: none;
+    color: none;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sample Message Buttons Styling */
+.sample-message-container {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.sample-message-container button {
+    padding: 12px 25px;
+    background: #959697;
+    backdrop-filter: blur;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sample-message-container {
+display: flex;
+overflow-x: auto; /* Enables horizontal scrolling */
+gap: 10px; /* Adds spacing between buttons */
+padding: 10px; /* Adds padding around the container */
+scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.sample-message-container::-webkit-scrollbar {
+height: 6px; /* Set scrollbar height */
+}
+
+.sample-message-container::-webkit-scrollbar-thumb {
+background: #777779; /* Scrollbar color */
+border-radius: 3px;
+}
+
+.sample-message-container::-webkit-scrollbar-thumb:hover {
+background: #848385; /* Scrollbar hover effect */
+}
+
+.sample-message-container button:hover {
+    background: #737273;
+    transform: scale(1.05);
+}
+
+.sample-message-container button:active {
+    background: #747374;
+    transform: scale(0.98);
+}
+
+.sample-message-container button:focus {
+    outline: none;
+}
+
+.chat-body {
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: none;
+}
+
+.chat-footer {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background: none;
+
+}
+
+input:disabled {
+    background: #e0e0e0;
+    /* Light gray to indicate disabled state */
+    color: #8c8c8c;
+    /* Gray text color */
+    cursor: not-allowed;
+}
+
+button:disabled {
+    background: #6c757d;
+    /* Gray background for disabled state */
+    cursor: not-allowed;
+}
+
+button:disabled {
+    background: #6c757d;
+    /* Gray background for disabled state */
+    color: #eaf27eb0;
+    /* Lighter text color */
+    cursor: not-allowed;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.chat-footer button {
+    padding: 10px 15px;
+    background: #1726b5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chat-footer button:hover {
+    background: #3544d3;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 80%;
+}
+
+.message.user {
+    margin-left: auto;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.message.user .text {
+    background: none;
+    color: #0d4cd3ba;
+}
+
+.message.bot .text {
+    background: none;
+    color: #1abd08;
+}
+
+.message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message .text {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .chat-container {
+        height: 100vh;
+    }
+
+    .chat-header {
+        font-size: 16px;
+    }
+
+    .chat-footer button {
+        font-size: 14px;
+    }
+}
