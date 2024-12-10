@@ -1,5 +1,2 @@
-Get your API key as followring youtube Video 
-Installation guide also mentioned in the video 
-and replace your actual API with YOUR API 
-
-_Dineth Gunawardana_
+This using Ai API of Google GEMINI It's free (2024 December) 
+Follow the youtube video to create your assistant 
