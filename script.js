@@ -1,4 +1,4 @@
-const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=YOUR API KEY";
+const API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=YOUR API KEY"; // replace your API key in here you can get it at google studio AI API
         const CLUB_MEMORY = `
 Your bots memory here `;
 
